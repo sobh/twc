@@ -1,0 +1,6 @@
+# Executable
+twc
+# Object files
+*.o
+# clangd compile_flags
+compile_flags.txt
