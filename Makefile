@@ -31,6 +31,9 @@ CC = cc
 SRC = main.c
 OBJ = ${SRC:.c=.o}
 
+run: all
+	./${APP}
+
 all: options ${APP}
 
 options:
@@ -69,4 +72,4 @@ install: all
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/${APP}
 
-.PHONY: all options clean dist install uninstall
+.PHONY: run all options clean dist install uninstall
